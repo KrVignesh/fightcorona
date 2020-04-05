@@ -1,0 +1,94 @@
+:root {
+    --priColor: #50f092;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* #home {
+    height: 100vh;
+} */
+
+.homeText {
+    text-align: left;
+}
+
+#about{
+    margin-top: 75px;
+}
+
+.owl-nav {
+    text-align: center;
+    font-size: 40px;
+}
+
+.icon {
+    color: var(--priColor) !important;
+}
+
+.bg-success {
+    background-color: var(--priColor) !important;
+}
+
+.btn-outline-success {
+    color: var(--priColor) !important;
+    border-color: var(--priColor) !important;
+}
+
+.btn-outline-success:hover {
+    color: #fff !important;
+    background-color: var(--priColor) !important;
+    border-color: var(--priColor) !important;
+}
+
+.current a {
+    color: var(--priColor) !important;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.hrLine {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border-top: 3px solid var(--priColor) !important;
+    width: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contactContent {
+        flex-direction: column;
+    }
+
+    .homeText {
+        text-align: center;
+    }
+
+    #about{
+        margin-top: 100px;
+    }
+}
